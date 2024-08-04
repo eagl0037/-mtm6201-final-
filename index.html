@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Game Style Homepage</title>
+  <link rel="stylesheet" href="mycss/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">Your Name</a>
+        <ul class="nav-links">
+          <li><a href="#" class="nav-link" onclick="navigateTo('home')">Home</a></li>
+          <li><a href="#" class="nav-link" onclick="navigateTo('coding')">Coding</a></li>
+          <li><a href="#" class="nav-link" onclick="navigateTo('design')">Graphic Design</a></li>
+          <li><a href="#" class="nav-link" onclick="navigateTo('editing')">Editing</a></li>
+          <li><a href="#" class="nav-link" onclick="navigateTo('about')">About</a></li>
+          <li><a href="#" class="nav-link" onclick="navigateTo('contact')">Contact</a></li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="main-content">
+    <section id="home" class="home-section">
+      <div class="container">
+        <h1>Hi! I am Natasha</h1>
+        <p>Explore my portfolio through this interactive game-style homepage.</p>
+        <div class="interactive-area">
+          <div class="character">
+            <img src="images/giphy.gif" alt="Animated Dog" class="dog">
+          </div>
+          <div class="buttons">
+            <button class="btn" onclick="navigateTo('coding')">Coding</button>
+            <button class="btn" onclick="navigateTo('design')">Graphic Design</button>
+            <button class="btn" onclick="navigateTo('editing')">Editing</button>
+            <button class="btn" onclick="navigateTo('about')">About</button>
+            <button class="btn" onclick="navigateTo('contact')">Contact</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
