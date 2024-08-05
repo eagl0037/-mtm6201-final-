@@ -12,8 +12,8 @@ body {
 }
 
 header {
-  background: rgb(166, 191, 228);
-  color: black;
+  background: rgb(18, 33, 56);
+  color: rgb(211, 215, 223);
   padding: 20px 0;
   position: fixed;
   width: 100%;
@@ -42,7 +42,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #100f0f;
+  color: #d5dbf9;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -583,7 +583,7 @@ section {
 
 .contact {
   padding: 80px 20px;
-  background: #121111;
+  background: #08003d;
   text-align: center;
 }
 
