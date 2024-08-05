@@ -1,55 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Interactive Game Style Homepage</title>
-  <link rel="stylesheet" href="mycss/styles.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natasha's Creative Portfolio</title>
+    <link rel="stylesheet" href="mycss/styles.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="container">
-        <a href="#" class="logo">Natasha E</a>
-        <ul class="nav-links">
-          <li><a href="#" class="nav-link" onclick="navigateTo('home')">Home</a></li>
-          <li><a href="#" class="nav-link" onclick="navigateTo('coding')">Coding</a></li>
-          <li><a href="#" class="nav-link" onclick="navigateTo('design')">Graphic Design</a></li>
-          <li><a href="#" class="nav-link" onclick="navigateTo('editing')">Editing</a></li>
-          <li><a href="#" class="nav-link" onclick="navigateTo('about')">About</a></li>
-          <li><a href="#" class="nav-link" onclick="navigateTo('contact')">Contact</a></li>
-        </ul>
-        <div class="burger" onclick="toggleMenu()">
-          <div class="line1"></div>
-          <div class="line2"></div>
-          <div class="line3"></div>
+    <header>
+        <nav>
+            <div class="logo">Natasha</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm Natasha</h1>
+            <p>Creative IMD Student | Designer | Innovator</p>
+            <a href="#portfolio" class="btn">View My Work</a>
         </div>
-      </div>
-    </nav>
-  </header>
-  <main id="main-content">
-    <section id="home" class="home-section">
-      <div class="container">
-        <h2>Hi! </h2>
-         <h1> I am Natasha</h1>
-
-        
-          </div>
-          <div class="buttons">
-            <button class="btn" onclick="navigateTo('coding')">Coding</button>
-            <button class="btn" onclick="navigateTo('design')">Graphic Design</button>
-            <button class="btn" onclick="navigateTo('editing')">Editing</button>
-            <button class="btn" onclick="navigateTo('about')">About</button>
-            <button class="btn" onclick="navigateTo('contact')">Contact</button>
-          </div>
-        </div>
-      </div>
     </section>
-  </main>
-  <script src="script.js"></script>
+    <section id="portfolio" class="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="images/l.png" alt="Project 1">
+                <div class="portfolio-overlay">
+                    <h3>Angel Graphics</h3>
+                    <p>This captivating angel graphic design showcases a blend of ethereal elegance and delicate details. The angel, with gracefully outstretched wings, is depicted in soft pastel hues, embodying a serene and heavenly presence. The intricate patterns and flowing lines highlight the ethereal beauty and grace, while subtle accents of light and shadow add depth and dimension. This design seamlessly combines a girly and elegant aesthetic, reflecting Natasha's unique artistic vision and meticulous attention to detail.</p>
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/w1.png" alt="Project 2">
+                <div class="portfolio-overlay">
+                    <h3>Music Website</h3>
+                    <p>he site boasts a clean and modern design, with easy-to-navigate sections dedicated to lessons, gear reviews, and performance tips. High-definition video tutorials, sound samples, and interactive tabs enhance the learning experience. The community section allows users to share their music, ask questions</p>
+                </div>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h1>About Me</h1>
+        <div class="about-content">
+            <img src="images/me.jpeg" alt="Natasha">
+            <p>Hi, I'm Natasha, an IMD student passionate about design and technology. I love creating visually stunning and user-friendly experiences. Explore my portfolio to see some of my best work and learn more about my journey in design and multimedia.</p>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 Natasha's Portfolio. All rights reserved.</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
+
 
 
